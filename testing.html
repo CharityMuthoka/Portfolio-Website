@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            color: white;
+        }
+        .navbar-brand img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .hero {
+            background: url('images/hero.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-weight: 700;
+            font-size: 3rem;
+            margin: 0;
+        }
+        section {
+            padding: 60px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #f8f9fa;
+            padding: 30px 0;
+        }
+        .social-icons a {
+            color: #f8f9fa;
+            font-size: 1.2rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #8f94fb;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="My Portfolio Logo">
+                    My Portfolio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my projects and skills.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light">
+        <div class="container text-center">
+            <div class="d-flex align-items-center justify-content-center mb-4">
+                <img src="images/about_icon.png" alt="About Us Icon" width="50" height="50" class="me-3 rounded-circle">
+                <h2>About Us</h2>
+            </div>
+            <p>I'm a passionate developer specializing in web and mobile solutions. I tailor each project to meet the unique challenges and goals of clients, ensuring standout results.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="p-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">What I Do</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                    <h4>Web Development</h4>
+                    <p>I specialize in creating dynamic and beautiful web pages.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                    <h4>Mobile App Development</h4>
+                    <p>Building intuitive mobile apps for iOS and Android platforms.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-paint-brush fa-3x mb-3"></i>
+                    <h4>Graphic Design</h4>
+                    <p>Creating visually appealing designs tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-dark text-light p-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Featured Projects</h2>
+            <p>Here are some of the projects I’ve worked on recently.</p>
+            <!-- Project cards go here -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="p-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">What My Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Fantastic work! Highly recommended for any web project."</p>
+                        <footer class="blockquote-footer">Client Name, CEO at Company</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Great attention to detail and an eye for design. Loved the final product."</p>
+                        <footer class="blockquote-footer">Client Name, Product Manager</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Delivered on time and exceeded expectations. Will hire again!"</p>
+                        <footer class="blockquote-footer">Client Name, Founder of Startup</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="cta" class="p-5 text-light bg-primary text-center">
+        <div class="container">
+            <h3>Interested in Working Together?</h3>
+            <p>Feel free to reach out and discuss your project!</p>
+            <a href="#contact" class="btn btn-light btn-lg mt-3">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container text-center mt-5">
+        <i class="fas fa-envelope fa-3x mb-4"></i>
+        <h2>Contact Us</h2>
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="mt-3">&copy; 2024 CHARITY MUTHOKA</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
